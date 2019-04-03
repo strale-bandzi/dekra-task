@@ -1,0 +1,25 @@
+<div class='container'>
+    <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Username</th>
+            <th scope="col">Real name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Website</th>
+          </tr>
+        </thead>
+    
+      
+        <tbody *ngFor="let list of results">
+          <tr class="table-success">
+            <th scope="row">{{list.id}}</th>
+            <td>{{list.username}}</td>
+            <td>{{list.name}}</td>
+            <td>{{list.email}}</td>
+            <td>{{list.website}}</td>
+          </tr>
+        </tbody>
+      </table> 
+    
+</div>
